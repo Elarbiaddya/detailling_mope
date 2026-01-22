@@ -15,6 +15,7 @@ Anónimo: Podra ver los servicios que se ofrecen.
 ## Vistas
 - Home
 - Servicios
+- Servicio
 - Cita
 - Login/Registro
 - Nosotros
