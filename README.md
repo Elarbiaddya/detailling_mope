@@ -13,14 +13,14 @@ Cliente: Podra concretar citas y acceder a su historial de citas.
 Anónimo: Podra ver los servicios que se ofrecen.
 
 ## Vistas
-Home
-Servicios
-Cita
-Login/Registro
-Nosotros
-Contacto
-Dashboard Admin: usuarios, servicios
-Perfil: historial, vehiculos
+- Home
+- Servicios
+- Cita
+- Login/Registro
+- Nosotros
+- Contacto
+- Dashboard Admin: usuarios, servicios
+- Perfil: historial, vehiculos
 
 # Arquitectura/Tecnología
 
