@@ -33,8 +33,8 @@ Desarrollar una aplicación web que permita:
 
 * Registrarse e iniciar sesión.
 * Solicitar citas.
-* Consultar su historial de citas.
-* Consultar su próxima cita pendiente.
+* Consultar el historial de citas.
+* Consultar la próxima cita pendiente.
 * Cancelar citas permitidas.
 
 ### Anónimo
@@ -89,7 +89,9 @@ Desarrollar una aplicación web que permita:
 
 ## Despliegue
 
-* AWS (Amazon Web Services)
+* Frontend: Vercel
+* Backend: AWS
+* Base de datos: MySQL en AWS
 
 # Esquema entidad-relación
 
