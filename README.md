@@ -1,45 +1,108 @@
-TFG
-# Tematica
-Pagina de un taller que ofrece servicios basicos.
+# TFG
+
+# Temática
+
+Aplicación web para un centro de detailing y cuidado estético del automóvil.
+
+La plataforma permite consultar los servicios ofrecidos, solicitar citas online y gestionar usuarios, servicios y citas mediante un panel de administración.
 
 # Objetivos
-Tener una pagina donde se vean los servicios que se ofrecen y donde puedes conctretar una cita y consultar tu historial de citas pasadas.
+
+Desarrollar una aplicación web que permita:
+
+* Mostrar los servicios disponibles.
+* Permitir a los usuarios registrarse e iniciar sesión.
+* Solicitar citas para los diferentes servicios.
+* Consultar el historial de citas realizadas.
+* Gestionar usuarios, servicios y citas desde un panel de administración.
+* Aplicar control de acceso mediante roles.
+* Disponer de una interfaz responsive y fácil de utilizar.
 
 # Funcionalidades
 
 ## Roles
-Admin: Podra acceder gestionar los usuarios y los servicios que se ofrecen.
-Cliente: Podra concretar citas y acceder a su historial de citas.
-Anónimo: Podra ver los servicios que se ofrecen.
+
+### Admin
+
+* Gestionar usuarios.
+* Gestionar servicios.
+* Gestionar citas.
+* Acceder al panel de administración.
+
+### Cliente
+
+* Registrarse e iniciar sesión.
+* Solicitar citas.
+* Consultar su historial de citas.
+* Consultar su próxima cita pendiente.
+* Cancelar citas permitidas.
+
+### Anónimo
+
+* Consultar la página principal.
+* Consultar los servicios disponibles.
+* Ver el detalle de los servicios.
 
 ## Vistas
-- Home
-- Servicios
-- Servicio
-- Cita
-- Login/Registro
-- Nosotros
-- Contacto
-- Dashboard Admin: usuarios, servicios
-- Perfil: historial, vehiculos
+
+### Públicas
+
+* Home
+* Servicios
+* Detalle de servicio
+* Login
+* Registro
+
+### Cliente
+
+* Perfil
+* Citas
+* Historial de citas
+
+### Administrador
+
+* Dashboard Admin
+* Gestión de usuarios
+* Gestión de servicios
+* Gestión de citas
 
 # Arquitectura/Tecnología
 
 ## Frontend
-- Figma para prototipado
-- React
-- CSS
+
+* Figma para prototipado
+* React
+* React Router
+* CSS Modules
+* Fetch API
 
 ## Backend
-- Laravel
-- ORM: Eloquent
-- Base de datos: MySql
 
-## Despliegue:
-- Docker
-- AWS (Amazon Web Service)
+* Laravel
+* Laravel Sanctum
+* ORM: Eloquent
+* API REST
 
-# Esquema entida-relación
+## Base de datos
+
+* MySQL
+
+## Despliegue
+
+* AWS (Amazon Web Services)
+
+# Esquema entidad-relación
+
+## Entidades principales
+
+* Roles
+* Usuarios
+* Servicios
+* Citas
+* Vehículos
+* Cartas de trabajo
 
 # Autor
-- Elarbi Addya Daoui
+
+* Elarbi Addya Daoui
+
