@@ -115,7 +115,7 @@ function GestionUsuarios() {
     const passwd = e.target.password.value;
     if (!usuarioSel) {
       if (!passwd) {
-        setErrorPanel("La contraseña es obligatoria al crear un usuario.");
+        setErrorPanel(["La contraseña es obligatoria al crear un usuario."]);
         return;
       }
       datos.password              = passwd;
@@ -141,10 +141,9 @@ function GestionUsuarios() {
 
       if (!res.ok) {
         if (res.status === 422 && respuesta.errors) {
-          const primerError = Object.values(respuesta.errors)[0]?.[0];
-          setErrorPanel(primerError || "Error de validación.");
+          setErrorPanel(Object.values(respuesta.errors).flat());
         } else {
-          setErrorPanel(respuesta.message || "Error al guardar.");
+          setErrorPanel([respuesta.message || "Error al guardar."]);
         }
         return;
       }
@@ -156,7 +155,7 @@ function GestionUsuarios() {
       cerrarPanel();
       cargar();
     } catch {
-      setErrorPanel("Error de conexión.");
+      setErrorPanel(["Error de conexión."]);
     } finally {
       setGuardando(false);
     }
@@ -286,7 +285,13 @@ function GestionUsuarios() {
         </div>
 
         <form key={usuarioSel?.id ?? "nuevo"} onSubmit={handleGuardar}>
-          {errorPanel && <p className={styles.mensajeError}>{errorPanel}</p>}
+          {errorPanel && errorPanel.length > 0 && (
+            <div className={styles.mensajeError}>
+              {errorPanel.map((msg, i) => (
+                <p key={i}>{msg}</p>
+              ))}
+            </div>
+          )}
 
           <div className={styles.campoForm}>
             <label>Nombre</label>
