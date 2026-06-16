@@ -1,0 +1,43 @@
+.footer {
+  background-color: #121212;
+  color: #7A7A7A;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  font-size: 0.875rem;
+  border-top: 1px solid #4A4A4A;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.1rem;
+}
+
+.footerLogoImg {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footerNombre {
+  color: var(--color-primario);
+  font-weight: bold;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+}
+
+.footerSlogan {
+  color: #7A7A7A;
+  font-size: 0.85rem;
+}
+
+.footerCopy {
+  color: #4A4A4A;
+  font-size: 0.8rem;
+}

@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+:root {
+  /* === Paleta Detailing Mope === */
+
+  /* Azul principal */
+  --color-primario: #00C8E8;
+  --color-primario-hover: #009FBE;
+
+  /* Acento (mismo azul — sin naranja) */
+  --color-acento: #00C8E8;
+  --color-acento-hover: #009FBE;
+
+  /* Estado */
+  --color-exito: #28a745;
+  --color-exito-hover: #218838;
+  --color-peligro: #dc3545;
+  --color-peligro-hover: #c82333;
+
+  /* Fondos */
+  --color-fondo: #000000;
+  --color-fondo-secundario: #121212;
+
+  /* Texto */
+  --color-texto: #ffffff;
+  --color-texto-suave: #7A7A7A;
+
+  /* Estructura */
+  --color-borde: #4A4A4A;
+  --color-gris-claro: #D9D9D9;
+  --color-gris-metalico: #4A4A4A;
+}

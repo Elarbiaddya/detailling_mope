@@ -1,0 +1,35 @@
+.text-center {
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-muted {
+  color: var(--color-texto-suave);
+}
+
+.margin-bottom {
+  margin-bottom: 1rem;
+}
+
+.padding-small {
+  padding: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: var(--color-peligro);
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: var(--color-texto-suave);
+}
